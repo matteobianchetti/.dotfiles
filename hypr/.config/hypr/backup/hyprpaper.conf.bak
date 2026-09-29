@@ -1,0 +1,7 @@
+wallpaper {
+    monitor =
+    path = ~/Pictures/blue_metro.jpg
+    fit_mode = cover
+}
+
+splash = false

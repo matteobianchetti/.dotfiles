@@ -1,0 +1,116 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$rust\
+$lua\
+$python\
+$ruby\
+$golang\
+$nodejs\
+$aws\
+$docker_context\
+$jobs\
+$cmd_duration\
+$line_break\
+$character
+"""
+
+add_newline = false
+palette = 'everforest_light'
+
+[fill]
+symbol = ' '
+
+[directory]
+
+[git_branch]
+style = 'bold purple'
+format = 'on [$symbol$branch(:$remote_branch)]($style) '
+symbol = ' '
+
+[cmd_duration]
+style = 'gray'
+format = '[$duration]($style)'
+
+[rust]
+symbol = ' '
+format = '[$symbol($version )]($style)'
+
+[lua]
+symbol = ' '
+format = '[$symbol($version )]($style)'
+
+[python]
+symbol = ' '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[golang]
+style = 'blue'
+symbol = ' '
+
+[nodejs]
+symbol = ' '
+format = '[$symbol($version )]($style)'
+
+[jobs]
+symbol = ''
+style = 'red'
+number_threshold = 1
+format = '[$symbol]($style)'
+
+
+[palettes.nord]
+dark_blue = '#5E81AC'
+blue = '#81A1C1'
+teal = '#88C0D0'
+red = '#BF616A'
+orange = '#D08770'
+green = '#A3BE8C'
+yellow = '#EBCB8B'
+purple = '#B48EAD'
+gray = '#434C5E'
+black = '#2E3440'
+white='#D8DEE9'
+
+[palettes.onedark]
+dark_blue='#61afef'
+blue='#56b6c2'
+red='#e06c75'
+green='#98c379'
+purple='#c678dd'
+cyan='#56b6c2'
+orange='#be5046'
+yellow='#e5c07b'
+gray='#828997'
+white ='#abb2bf'
+black='#2c323c'
+
+[palettes.everforest_light]
+red = "#f85552"
+orange = "#f57d26"
+yellow = "#dfa000"
+green = "#8da101"
+aqua = "#35a77c"
+blue = "#3a94c5"
+purple = "#df69ba"
+gray0 = "#a6b0a0"
+gray = "#939f91"
+gray2 = "#829181"
+white = "#e8eaed"
+black = "#121212"
+
+[palettes.everforest_dark]
+red = "#e67e80"
+orange = "#e69875"
+yellow = "#dbbc7f"
+green = "#a7c080"
+aqua = "#83c092"
+blue = "#7fbbb3"
+purple = "#d699b6"
+gray = "#7a8478"
+grey1 = "#859289"
+grey2 = "#9da9a0"

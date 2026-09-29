@@ -1,0 +1,8 @@
+require("x.monitors")
+require("x.keybinds")
+require("x.looknfeel")
+require("x.autostart")
+require("x.env")
+require("x.misc")
+require("x.input")
+require("x.windowrules")
