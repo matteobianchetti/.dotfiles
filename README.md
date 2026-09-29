@@ -12,6 +12,7 @@ This repository contains my configuration files for several tools.
 ## Installation
 If you don't have it installed, make sure to install GNU Stow on your system.
 To install these dotfiles on your system follow these steps:
+
 ### 1. Clone this repository:
 ```bash
     git clone https://github.com/matteobianchetti/.dotfiles.git ~/.dotfiles
@@ -31,3 +32,22 @@ To install these dotfiles on your system follow these steps:
     stow yazi
     stow zsh
 ```
+
+## Usage
+Here is how to modify the configuration files to add or change stuff.
+
+### Zsh
+#### Plugins
+To install any zsh plugins, you'll need to modify the plguins.zsh file.
+Add
+```zsh
+_zplugin_load zsh-users plugin_name
+```
+at the end of the file.
+
+### Kitty
+To change kitty's theme you can just run the command
+```bash
+kitty +kitten themes
+```
+and browse for the theme you desire.
