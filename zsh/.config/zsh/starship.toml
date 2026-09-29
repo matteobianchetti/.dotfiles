@@ -20,12 +20,22 @@ $character
 """
 
 add_newline = false
-palette = 'everforest_light'
+# palette = 'everforest_light'
 
 [fill]
-symbol = ' '
+symbol = '·'
+style = 'bold black'
 
 [directory]
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+
+[directory.substitutions]
+'Documents' = '󰈙'
+'Downloads' = ' '
+'Music' = ' '
+'Pictures' = ' '
 
 [git_branch]
 style = 'bold purple'
