@@ -1,4 +1,4 @@
-# My .dotfiles
+# My Arch dotfiles
 This repository contains my configuration files for several tools.
 
 ## Contents
